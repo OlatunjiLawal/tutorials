@@ -1,12 +1,18 @@
+import sys
+
+loopno = int(sys.argv[0])
+fizzdiv = int(sys.argv[1])
+buzzdiv = int(sys.argv[2])
+
 def fizz_buzz ():
     
-    for number in range(1, 20):
+    for number in range(1, loopnumber):
     
-        if number % 3 == 0 and number % 4 == 0:
+        if number % fizzdiv == 0 and number % buzzdiv == 0:
             print("fizzbuzz")
-        elif number % 3 == 0:
+        elif number % fizzdiv == 0:
             print("fizz")
-        elif number % 4 == 0:
+        elif number % buzzdiv == 0:
             print("buzz")
         else:
             print(number)
