@@ -6,7 +6,7 @@ buzzdiv = int(sys.argv[2])
 
 def fizz_buzz ():
     
-    for number in range(1, loopnumber):
+    for number in range(1, loopno):
     
         if number % fizzdiv == 0 and number % buzzdiv == 0:
             print("fizzbuzz")
