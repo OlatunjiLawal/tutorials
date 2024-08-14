@@ -1,8 +1,8 @@
 import sys
 
-loopno = int(sys.argv[0])
-fizzdiv = int(sys.argv[1])
-buzzdiv = int(sys.argv[2])
+loopno = int(sys.argv[1])
+fizzdiv = int(sys.argv[2])
+buzzdiv = int(sys.argv[3])
 
 def fizz_buzz ():
     
