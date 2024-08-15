@@ -1,0 +1,55 @@
+should be
+
+- basics - add module loading
+= beyond basics, lambda/multi/exception/module loading - messy add requirements example
+= oo python - messy
+
+= testing - add the test pyamid
+
+
+= REMOVED OLD Section 2 activities that were too hard =
+
+
+8: System CLI applications
+Read through the click documentation about building a command line application
+https://pymbook.readthedocs.io/en/latest/click.html 
+https://www.youtube.com/watch?v=kNke39OZ2k0
+https://packaging.python.org/en/latest/tutorials/packaging-projects/ 
+
+Activities:
+Package up your previous fibonacci.py into a command line application, and install it into your local machine
+
+1) Setup a “setup.py” to run your Fibonacci.py as fibonacci
+2) Install your new application
+$ pip install .
+3) Test out your newly install cli app
+$ cd <any where in system>
+$ fibonacci 20 6 7
+
+ 
+9: PYPI CLI applications
+Create a test pypi user
+https://test.pypi.org/account/register/
+
+Read through the pypi test documentation
+https://packaging.python.org/en/latest/guides/using-testpypi/ 
+https://packaging.python.org/en/latest/tutorials/packaging-projects/ 
+
+Activities:
+Upload your previous fibonacci.py command line application into pypi registry, and install it into your local machine from pypi
+
+1) Follow the setup packaging projects steps for your Fibonacci.py app
+https://packaging.python.org/en/latest/tutorials/packaging-projects/
+
+2) Test your application is in pypi
+https://test.pypi.org/ 
+
+3) Install your new application from pypi
+$ pip install --index-url https://test.pypi.org/simple/ --no-deps <APP-NAME>
+
+4) Test out your newly install cli app
+$ cd <any where in system>
+$ which fibonacci
+$ fibonacci 20 6 7
+
+
