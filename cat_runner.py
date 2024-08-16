@@ -1,28 +1,20 @@
 from cat_class import Cat
+from cat_class import GoodCat
+from cat_class import BadCat
+from cat_class import VeryBadCat
+from cat_class import cat_cage
 
-class GoodCat(Cat):
+print("All cats are in a cage.")
 
-    def meow(self):
-        print("purr purr meow")
-    
-class BadCat(Cat):
+cat1: Cat = GoodCat()
+cat2: Cat = BadCat()
+cat3: Cat = VeryBadCat()
 
-    def meow(self):
-        print("hiss")
+@cat_cage
+def run_in_cage():
+        
+    cat1.meow()
+    cat2.meow()
+    cat3.meow()
 
-class VeryBadCat(Cat):
-
-    def meow(self):
-        raise Exception("Nope. scratch scratch")
-
-print("Good cats go...")
-cat: Cat = GoodCat()
-cat.meow()
-
-print("Bad cats go...")
-cat: Cat = BadCat()
-cat.meow()
-
-print('very bad cats need cages')
-cat: Cat = VeryBadCat()
-cat.meow()
+run_in_cage()
