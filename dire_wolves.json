@@ -1,0 +1,26 @@
+{
+    "Grey Wind": {
+        "Owner": "Robb Stark",
+        "Status": "Deceased"
+    },
+    "Lady": {
+        "Owner": "Sansa Stark",
+        "Status": "Deceased"
+    },
+    "Nymeria": {
+        "Owner": "Arya Stark",
+        "Status": "Living"
+    },
+    "Summer": {
+        "Owner": "Bran Stark",
+        "Status": "Deceased"
+    },
+    "Shaggydog": {
+        "Owner": "Rickon Stark",
+        "Status": "Deceased"
+    },
+    "Ghost": {
+        "Owner": "Jon Snow",
+        "Status": "Living"
+    }
+}
