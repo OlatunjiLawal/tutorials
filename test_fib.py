@@ -29,6 +29,6 @@ def test_fib_negative(self):
 if __name__ == "__main__":
     unittest.main()
 
-commit_msg_filepath = sys.argv[1]
+commit_msg_filepath = "Commit this!"
 with open(commit_msg_filepath, 'w') as f:
     f.write("# Please include a useful commit message!")
