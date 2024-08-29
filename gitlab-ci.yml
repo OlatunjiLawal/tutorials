@@ -1,0 +1,29 @@
+image: docker:latest
+
+services:
+  - docker:dind
+
+stages:
+  - build
+  - test
+  - deploy
+
+variables:
+  DOCKER_DRIVER: overlay2
+
+build:
+  stage: build
+  script:
+    - docker build -t my-app .
+
+test:
+  stage: test
+  script:
+    - docker run --rm my-app ./run-tests.sh
+
+deploy:
+  stage: deploy
+  script:
+    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
+    - docker tag my-app $CI_REGISTRY/my-group/my-app:latest
+    - docker push $CI_REGISTRY/my-group/my-app:latest
