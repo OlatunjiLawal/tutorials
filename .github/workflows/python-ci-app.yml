@@ -40,3 +40,6 @@ jobs:
     - name: Run tests with coverage
       run: |
         pytest --cov=my_package --cov-report=html --cov-report=term
+    - name: Run coverage
+      run: |
+        coverage report
